@@ -1,0 +1,11 @@
+instrucciones de flasheo en ubuntu: 
+- compilar el firmware mediante el siguiente comando:
+    qmk compile -kb crkbd -km kronstadt-lambda
+- despues de compilar el firmware mantener presionado el boton de reset en el teclado cuando este conectado.
+- ir a la carpeta donde se encuentra el firmware compilado. (~/qmk_firmware/.build)
+- flashear en la terminal de acuerdo a:
+    dfu-programmer atmega32u4 erase
+    dfu-programmer atmega32u4 flash crkbd_rev1_kronstadt-lambda.hex
+    dfu-programmer atmega32u4 reset
+
+    

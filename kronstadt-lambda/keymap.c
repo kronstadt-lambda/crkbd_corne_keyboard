@@ -34,9 +34,9 @@ LSFT_T(KC_ESC),   KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                     
 
     [1] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_NO,LCTL(KC_D),LCTL(KC_C),LCTL(KC_V),LCTL(KC_F),XXXXXXX,                 XXXXXXX,  KC_DEL,   KC_UP, XXXXXXX, XXXXXXX, KC_BSPC,
+      KC_NO,LCTL(KC_D),LCTL(KC_C),LCTL(KC_V),LCTL(KC_F),XXXXXXX,                 XXXXXXX,  KC_DEL,   KC_UP, XXXXXXX, KC_PPLS, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-        KC_F,   KC_TAB, KC_LSFT, KC_LCTL, KC_LALT, KC_PGUP,                      KC_VOLU, KC_LEFT, KC_DOWN,KC_RIGHT, XXXXXXX, XXXXXXX,
+        KC_F,   KC_TAB, KC_LSFT, KC_LCTL, KC_LALT, KC_PGUP,                      KC_VOLU, KC_LEFT, KC_DOWN,KC_RIGHT, KC_MINS, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_PSCR, XXXXXXX, XXXXXXX, KC_HOME,  KC_END, KC_PGDN,                      KC_VOLD, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
