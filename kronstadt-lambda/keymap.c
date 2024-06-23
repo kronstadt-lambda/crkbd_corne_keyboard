@@ -34,9 +34,9 @@ LSFT_T(KC_ESC),   KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                     
 
     [1] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      KC_NO,LCTL(KC_D),LCTL(KC_C),LCTL(KC_V),LCTL(KC_F),XXXXXXX,                    KC_F,  KC_DEL,   KC_UP, XXXXXXX, XXXXXXX, KC_BSPC,
+      KC_NO,LCTL(KC_D),LCTL(KC_C),LCTL(KC_V),LCTL(KC_F),XXXXXXX,                 XXXXXXX,  KC_DEL,   KC_UP, XXXXXXX, XXXXXXX, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX,  KC_TAB, KC_LSFT, KC_LCTL, KC_LALT, KC_PGUP,                      KC_VOLU, KC_LEFT, KC_DOWN,KC_RIGHT, XXXXXXX, XXXXXXX,
+        KC_F,   KC_TAB, KC_LSFT, KC_LCTL, KC_LALT, KC_PGUP,                      KC_VOLU, KC_LEFT, KC_DOWN,KC_RIGHT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_PSCR, XXXXXXX, XXXXXXX, KC_HOME,  KC_END, KC_PGDN,                      KC_VOLD, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
@@ -50,9 +50,9 @@ LSFT_T(KC_ESC),   KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                     
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       XXXXXXX, KC_PAST,    KC_4,    KC_5,    KC_6, KC_PPLS,                      XXXXXXX, KC_LEFT, KC_DOWN,KC_RIGHT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX,    KC_0,    KC_7,    KC_8,    KC_9,  KC_EQL,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      XXXXXXX, XXXXXXX,    KC_7,    KC_8,    KC_9,  KC_EQL,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LGUI,   MO(4),  KC_SPC,     KC_ENT, _______, KC_RALT
+                                             KC_0,   MO(4),  KC_SPC,     KC_ENT, _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -84,7 +84,7 @@ LSFT_T(KC_ESC),   KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                     
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       XXXXXXX, XXXXXXX, KC_F1, KC_F2, KC_F3, KC_F10,                             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX, KC_F4, KC_F5, KC_F6, KC_F11,                             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_SCLN, XXXXXXX,
+      XXXXXXX, XXXXXXX, KC_F4, KC_F5, KC_F6, KC_F11,                             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       XXXXXXX, XXXXXXX, KC_F7, KC_F8, KC_F9, KC_F12,                             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
