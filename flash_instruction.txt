@@ -1,4 +1,5 @@
 instrucciones de flasheo en ubuntu: 
+- copiar el keymap.c a la carpeta /home/brayan/qmk_firmware/keyboards/crkbd/keymaps/kronstadt-lambda
 - compilar el firmware mediante el siguiente comando:
     qmk compile -kb crkbd -km kronstadt-lambda
 - despues de compilar el firmware mantener presionado el boton de reset en el teclado cuando este conectado.
