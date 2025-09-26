@@ -1,0 +1,38 @@
+Instrucciones de flasheo en Ubuntu (Corne crkbd split)
+=====================================================
+
+0. Dentro de la carpeta del repositorio, copiar el archivo keymap a la direccion del qmk firmware:
+   cp keymap.c /home/brayan/qmk_firmware/keyboards/crkbd/keymaps/kronstadt-lambda
+
+1. Compilar el firmware (no importa en que carpeta estes):
+   Ejecuta en la terminal:
+       qmk compile -kb crkbd -km kronstadt-lambda
+
+   El archivo generado quedará en:
+       ~/qmk_firmware/.build/crkbd_rev1_kronstadt-lambda.hex
+
+2. Preparar el teclado para flashear:
+   - Conecta una sola mitad del teclado al USB.
+   - Mantén presionado el botón de reset de esa mitad para entrar en modo bootloader.
+   - El LED suele apagarse o el dispositivo reaparece en 'lsusb'.
+
+3. Flashear la primera mitad:
+   Ve a la carpeta del firmware y ejecuta:
+       cd ~/qmk_firmware/.build
+       dfu-programmer atmega32u4 erase
+       dfu-programmer atmega32u4 flash crkbd_rev1_kronstadt-lambda.hex
+       dfu-programmer atmega32u4 reset
+
+4. Repetir con la otra mitad:
+   - Desconecta la primera mitad y conecta la segunda.
+   - Presiona el botón de reset.
+   - Ejecuta los mismos comandos de flasheo.
+
+5. Reconectar ambas mitades:
+   Conecta el cable TRRS. Ambas mitades deben tener el mismo firmware y funcionar juntas.
+
+Notas útiles:
+- También puedes usar 'qmk flash -kb crkbd/rev1 -km kronstadt-lambda'.
+  Este comando detecta el dispositivo automáticamente, pero igual debes flashear una mitad a la vez.
+- Ambas mitades deben usar el mismo archivo .hex para evitar inconsistencias.
+- Visitar la doc de qmk firmware: https://docs.qmk.fm/keycodes?utm_source=chatgpt.com
