@@ -36,7 +36,7 @@ LSFT_T(KC_ESC),   KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                     
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCTL, KC_QUOT,    KC_Q,    KC_J,    KC_K,    KC_X,                         KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,LT(5,KC_SLSH),
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                    LT(5,KC_LGUI),   MO(1),  KC_SPC,    LT(3,KC_SPC), LT(2,KC_ENT), KC_RALT
+                                    LT(5,KC_LGUI),   MO(1),  KC_SPC,  LT(3,KC_SPC), LT(2,KC_ENT), LT(6,KC_RALT)
                                       //`--------------------------'  `--------------------------'
 
   ),
@@ -81,7 +81,7 @@ LSFT_T(KC_ESC),   KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                     
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, OS_LIN , XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+      RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, OS_LIN , XXXXXXX,                      XXXXXXX,RALT(KC_X),RALT(KC_Y),RALT(KC_Z), XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, OS_WIN , XXXXXXX,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
@@ -99,7 +99,20 @@ LCTL(KC_KP_PLUS), XXXXXXX, KC_F4,  KC_F5,   KC_F6,  KC_F11,    RCTL(RALT(RSFT(KC
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI, _______,  KC_SPC,     KC_ENT, _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
-  )   
+  ),   
+
+    [6] = LAYOUT_split_3x6_3(
+  //,-----------------------------------------------------.                    ,-----------------------------------------------------.
+XXXXXXX,LCTL(KC_COMM),LCTL(KC_1),LCTL(KC_2),LCTL(KC_3),LCTL(KC_QUOT),            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+XXXXXXX,LCTL(KC_DOT),LCTL(KC_4),LCTL(KC_5),LCTL(KC_6),LCTL(KC_LBRC),             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+XXXXXXX,LCTL(KC_BSLS),LCTL(KC_7),LCTL(KC_8),LCTL(KC_9),LCTL(KC_RBRC),            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
+                                          KC_LGUI, _______,  KC_SPC,     KC_ENT, _______, KC_RALT
+                                      //`--------------------------'  `--------------------------'
+  ),   
+
 };
 
 oled_rotation_t oled_init_user(oled_rotation_t rotation) {
