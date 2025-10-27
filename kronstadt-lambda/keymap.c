@@ -43,9 +43,9 @@ LSFT_T(KC_ESC),   KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                     
 
     [1] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-        KC_NO,LCTL(KC_Z),LCTL(KC_C),LCTL(KC_V),LCTL(KC_F),XXXXXXX,               XXXXXXX,  KC_DEL,   KC_UP, XXXXXXX, KC_PPLS, KC_BSPC,
+        KC_NO,LCTL(KC_Z),LCTL(KC_C),LCTL(KC_V),LCTL(KC_F),XXXXXXX,               XXXXXXX,  KC_DEL,   KC_UP, XXXXXXX, XXXXXXX, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-         KC_F,  KC_TAB, KC_LSFT, KC_LCTL, KC_LALT, KC_PGUP,                      KC_VOLU, KC_LEFT, KC_DOWN,KC_RIGHT, KC_MINS, XXXXXXX,
+         KC_F,  KC_TAB, KC_LSFT, KC_LCTL, KC_LALT, KC_PGUP,                      KC_VOLU, KC_LEFT, KC_DOWN,KC_RIGHT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_PSCR, XXXXXXX, XXXXXXX, KC_HOME,  KC_END, KC_PGDN,                      KC_VOLD, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
@@ -71,7 +71,7 @@ LSFT_T(KC_ESC),   KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                     
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       XXXXXXX, XXXXXXX,  KC_EQL, KC_LCBR, KC_RCBR, XXXXXXX,                      KC_EXLM, KC_HASH, KC_SLSH, KC_BSLS, KC_PIPE, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX, XXXXXXX, KC_LBRC, KC_RBRC, XXXXXXX,                      XXXXXXX,  KC_GRV, KC_CIRC,   KC_AT,    ENE ,  ENE_UP,
+      XXXXXXX, XXXXXXX, XXXXXXX, KC_LBRC, KC_RBRC, XXXXXXX,                      XXXXXXX,  KC_GRV, KC_CIRC, XXXXXXX,    ENE ,  ENE_UP,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI, _______,  KC_SPC,     KC_ENT, _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
@@ -103,11 +103,11 @@ LCTL(KC_KP_PLUS), XXXXXXX, KC_F4,  KC_F5,   KC_F6,  KC_F11,    RCTL(RALT(RSFT(KC
 
     [6] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-XXXXXXX,LCTL(KC_COMM),LCTL(KC_1),LCTL(KC_2),LCTL(KC_3),LCTL(KC_QUOT),            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+LCTL(KC_COMM),XXXXXXX,LCTL(KC_1),LCTL(KC_2),LCTL(KC_3),LCTL(KC_QUOT),            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-XXXXXXX,LCTL(KC_DOT),LCTL(KC_4),LCTL(KC_5),LCTL(KC_6),LCTL(KC_LBRC),             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+LCTL(KC_DOT),XXXXXXX,LCTL(KC_4),LCTL(KC_5),LCTL(KC_6),LCTL(KC_LBRC),             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-XXXXXXX,LCTL(KC_BSLS),LCTL(KC_7),LCTL(KC_8),LCTL(KC_9),LCTL(KC_RBRC),            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+LCTL(KC_BSLS),XXXXXXX,LCTL(KC_7),LCTL(KC_8),LCTL(KC_9),LCTL(KC_RBRC),            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI, _______,  KC_SPC,     KC_ENT, _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
