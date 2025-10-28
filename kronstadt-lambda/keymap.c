@@ -91,11 +91,11 @@ LSFT_T(KC_ESC),   KC_A,    KC_O,    KC_E,    KC_U,    KC_I,                     
 
     [5] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-     XXXXXXX , XXXXXXX,   KC_F1,   KC_F2,   KC_F3,  KC_F10,                   RALT(KC_I),RSFT(KC_F1),RSFT(KC_F2),RSFT(KC_F3),RSFT(KC_F10), XXXXXXX,
+     XXXXXXX , XXXXXXX,LALT(KC_F1),LALT(KC_F2),LALT(KC_F3),LALT(KC_F10), RALT(KC_I),RSFT(KC_F1),RSFT(KC_F2),RSFT(KC_F3),RSFT(KC_F10), XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-LCTL(KC_KP_PLUS), XXXXXXX, KC_F4,  KC_F5,   KC_F6,  KC_F11,    RCTL(RALT(RSFT(KC_PLUS))),RSFT(KC_F4),RSFT(KC_F5),RSFT(KC_F6),RSFT(KC_F11), XXXXXXX,
+LCTL(KC_KP_PLUS),XXXXXXX,LALT(KC_F4),LALT(KC_F5),LALT(KC_F6),LALT(KC_F11), RCTL(RALT(RSFT(KC_PLUS))),RSFT(KC_F4),RSFT(KC_F5),RSFT(KC_F6),RSFT(KC_F11), XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-   LALT(KC_A), XXXXXXX,   KC_F7,   KC_F8,   KC_F9,  KC_F12,   RCTL(RALT(RSFT(KC_MINUS))),RSFT(KC_F7),RSFT(KC_F8),RSFT(KC_F9),RSFT(KC_F12), XXXXXXX,
+   LALT(KC_A), XXXXXXX,LALT(KC_F7),LALT(KC_F8),LALT(KC_F9),LALT(KC_F12),   RCTL(RALT(RSFT(KC_MINUS))),RSFT(KC_F7),RSFT(KC_F8),RSFT(KC_F9),RSFT(KC_F12), XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI, _______,  KC_SPC,     KC_ENT, _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
@@ -103,11 +103,11 @@ LCTL(KC_KP_PLUS), XXXXXXX, KC_F4,  KC_F5,   KC_F6,  KC_F11,    RCTL(RALT(RSFT(KC
 
     [6] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-LCTL(KC_COMM),XXXXXXX,LCTL(KC_1),LCTL(KC_2),LCTL(KC_3),LCTL(KC_QUOT),            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+LCTL(KC_COMM),XXXXXXX,LCTL(KC_1),LCTL(KC_2),LCTL(KC_3),LCTL(KC_QUOT),            XXXXXXX,   KC_F1,   KC_F2,   KC_F3, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-LCTL(KC_DOT),XXXXXXX,LCTL(KC_4),LCTL(KC_5),LCTL(KC_6),LCTL(KC_LBRC),             XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+LCTL(KC_DOT),XXXXXXX,LCTL(KC_4),LCTL(KC_5),LCTL(KC_6),LCTL(KC_LBRC),             XXXXXXX,   KC_F4,   KC_F5,   KC_F6, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-LCTL(KC_BSLS),XXXXXXX,LCTL(KC_7),LCTL(KC_8),LCTL(KC_9),LCTL(KC_RBRC),            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+LCTL(KC_BSLS),XXXXXXX,LCTL(KC_7),LCTL(KC_8),LCTL(KC_9),LCTL(KC_RBRC),            XXXXXXX,   KC_F7,   KC_F8,   KC_F9, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LGUI, _______,  KC_SPC,     KC_ENT, _______, KC_RALT
                                       //`--------------------------'  `--------------------------'
